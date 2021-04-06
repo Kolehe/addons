@@ -1,0 +1,239 @@
+<odoo>
+    <data>
+        <template id="simple_theme_assets" name="simple" inherit_id="website.assets_frontend"> 
+          <xpath expr="//link[last()]" position="after" >
+          <!-- custom css -->
+            <link rel="stylesheet" href="webtemplate/static/css/style.css"/>
+            <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+          </xpath> 
+        </template> 
+        
+        <record id="homepage_view_1" model="ir.ui.view">
+         <field name="name">Homepage</field>
+         <field name="type">qweb</field>
+         <field name="key">website.homepage1</field>
+         <field name="mode">primary</field>
+         <field name="active">True</field>
+         <field name="arch" type="xml"> 
+            <t name="Homepage" t-name="website.homepage1">
+                <t t-call="website.layout">
+                    <t t-set="pageName" t-value="'homepage'"/>
+                    <div id="wrap" class="oe_structure oe_empty">
+                        <body>
+
+        <div class="container mt-5">
+            <div class="row">
+                <div id="col3" class="col-md-3">
+                    <div class="card">
+                        <div class="card-header mt-4 mb-2">
+                            <h6>Filter de recherche</h6>
+                            <form action="">
+                                <input type="date" class="form-controm"/>
+                            </form>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="">Sexe</h6>
+                            <form action="">
+                                <input type="checkbox" name="" id="sex1"/>
+                                <label for="sex1">Masculin</label> <br></br>
+                                <input type="checkbox" name="" id="sex2"/>
+                                <label for="sex2">Feminin</label>
+                            </form>
+                            <h6 class="mt-3">Spécialité</h6>
+                            <form action="">
+                                <input type="checkbox" name="" id="choix1"/>
+                                <label for="choix1">Masculin</label><br></br>
+                                <input type="checkbox" name="" id="choix2"/>
+                                <label for="choix2">Feminin</label><br></br>
+                                <input type="checkbox" name="" id="choix2"/>
+                                <label for="choix2">Feminin</label><br></br>
+                                <input type="checkbox" name="" id="choix2"/>
+                                <label for="choix2">Feminin</label><br></br>
+                                <input type="checkbox" name="" id="choix2"/>
+                                <label for="choix2">Feminin</label>
+                            </form>
+                        </div>
+                        <div class="card-footer mt-2">
+                            <button class="btn btn-primary">Rechercher</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9 ">
+                    <div class="card my-3">
+                        <div class="row align-items-center">
+                            <div class="col-md-8">
+                                <div class="row align-items-center">
+                                    <div class="col-4">
+                                        <img src="webtemplate/static/img/doctors/doctors-4.jpg" id="img" style="width: 100%"/>
+                                    </div>                                    
+                                            <div id="hd1" class="header">
+                                                <h3>Dr Siata KONE <a href="#"><i class="fas fa-check-circle" id="icn"></i></a></h3>
+                                                <small>BOS, MDS Cral esdrftgvybhnj,k</small> <br></br>
+                                                <small>Dentiste</small> <br></br>
+                                                <a href="#"><i class="fas fa-star" id="str"></i></a> 
+                                                <a href="#"><i class="fas fa-star" id="str"></i></a> 
+                                                <a href="#"><i class="fas fa-star" id="str"></i></a> 
+                                                <a href="#"><i class="fas fa-star" id="str"></i></a> 
+                                                <a href="#"><i class="fas fa-star-half-alt" id="str"></i></a> (4,5) <br></br>
+                                                <i class="fas fa-map-marker-alt"></i> Newyork, USA <br></br>
+                                                <i class="fas fa-money-bill-alt"></i> 50.000 - 90.000 FCFA <br></br>
+                                                <i class="fas fa-clock"></i> Disponible 22 Février au 22 Mars                           
+                                            </div>
+                                </div>
+                            </div>
+                            <div id="btn" class="col-md-4">
+                                        <br></br>
+                                        <i id="ic1" class="fas fa-hand-point-right"></i> 98% <br></br>
+                                        <i id="ic1" class="fas fa-comment-dots"></i> 17 Feedback <br></br>
+                                        <i id="ic2" class="fas fa-map-marker-alt"></i> Newyork, USA <br></br>
+                                        <button class="btn btn-outline-primary form-control mb-3">Voir profile</button>
+                                        <div class="btn btn-primary form-control">Réservr une place</div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card my-3">
+                        <div class="row align-items-center">
+                            <div class="col-md-8">
+                                <div class="row align-items-center">
+                                    <div class="col-4">
+                                        <img src="webtemplate/static/img/doctors/doctors-4.jpg" id="img" style="width: 100%"/>
+                                    </div>                                    
+                                            <div id="hd1" class="header">
+                                                <h3>Dr Siata KONE <a href="#"><i class="fas fa-check-circle" id="icn"></i></a></h3>
+                                                <small>BOS, MDS Cral esdrftgvybhnj,k</small> <br></br>
+                                                <small>Dentiste</small> <br></br>
+                                                <a href="#"><i class="fas fa-star" id="str"></i></a> 
+                                                <a href="#"><i class="fas fa-star" id="str"></i></a> 
+                                                <a href="#"><i class="fas fa-star" id="str"></i></a> 
+                                                <a href="#"><i class="fas fa-star" id="str"></i></a> 
+                                                <a href="#"><i class="fas fa-star-half-alt" id="str"></i></a> (4,5) <br></br>
+                                                <i class="fas fa-map-marker-alt"></i> Newyork, USA <br></br>
+                                                <i class="fas fa-money-bill-alt"></i> 50.000 - 90.000 FCFA <br></br>
+                                                <i class="fas fa-clock"></i> Disponible 22 Février au 22 Mars                           
+                                            </div>
+                                </div>
+                            </div>
+                            <div id="btn" class="col-md-4">
+                                        <br></br>
+                                        <i id="ic1" class="fas fa-hand-point-right"></i> 98% <br></br>
+                                        <i id="ic1" class="fas fa-comment-dots"></i> 17 Feedback <br></br>
+                                        <i id="ic2" class="fas fa-map-marker-alt"></i> Newyork, USA <br></br>
+                                        <button class="btn btn-outline-primary form-control mb-3">Voir profile</button>
+                                        <div class="btn btn-primary form-control">Réservr une place</div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card my-3">
+                        <div class="row align-items-center">
+                            <div class="col-md-8">
+                                <div class="row align-items-center">
+                                    <div class="col-4">
+                                        <img src="webtemplate/static/img/doctors/doctors-4.jpg" id="img" style="width: 100%"/>
+                                    </div>                                    
+                                            <div id="hd1" class="header">
+                                                <h3>Dr Siata KONE <a href="#"><i class="fas fa-check-circle" id="icn"></i></a></h3>
+                                                <small>BOS, MDS Cral esdrftgvybhnj,k</small> <br></br>
+                                                <small>Dentiste</small> <br></br>
+                                                <a href="#"><i class="fas fa-star" id="str"></i></a> 
+                                                <a href="#"><i class="fas fa-star" id="str"></i></a> 
+                                                <a href="#"><i class="fas fa-star" id="str"></i></a> 
+                                                <a href="#"><i class="fas fa-star" id="str"></i></a> 
+                                                <a href="#"><i class="fas fa-star-half-alt" id="str"></i></a> (4,5) <br></br>
+                                                <i class="fas fa-map-marker-alt"></i> Newyork, USA <br></br>
+                                                <i class="fas fa-money-bill-alt"></i> 50.000 - 90.000 FCFA <br></br>
+                                                <i class="fas fa-clock"></i> Disponible 22 Février au 22 Mars                           
+                                           </div>
+                                </div>
+                            </div>
+                            <div id="btn" class="col-md-4">
+                                        <br></br>
+                                        <i id="ic1" class="fas fa-hand-point-right"></i> 98% <br></br>
+                                        <i id="ic1" class="fas fa-comment-dots"></i> 17 Feedback <br></br>
+                                        <i id="ic2" class="fas fa-map-marker-alt"></i> Newyork, USA <br></br>
+                                        <button class="btn btn-outline-primary form-control mb-3">Voir profile</button>
+                                        <div class="btn btn-primary form-control">Réservr une place</div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card my-3">
+                        <div class="row align-items-center">
+                            <div class="col-md-8">
+                                <div class="row align-items-center">
+                                    <div class="col-4">
+                                        <img src="webtemplate/static/img/doctors/doctors-4.jpg" id="img" style="width: 100%"/>
+                                    </div>                                    
+                                             <div id="hd1" class="header">
+                                                <h3>Dr Siata KONE <a href="#"><i class="fas fa-check-circle" id="icn"></i></a></h3>
+                                                <small>BOS, MDS Cral esdrftgvybhnj,k</small> <br></br>
+                                                <small>Dentiste</small> <br></br>
+                                                <a href="#"><i class="fas fa-star" id="str"></i></a> 
+                                                <a href="#"><i class="fas fa-star" id="str"></i></a> 
+                                                <a href="#"><i class="fas fa-star" id="str"></i></a> 
+                                                <a href="#"><i class="fas fa-star" id="str"></i></a> 
+                                                <a href="#"><i class="fas fa-star-half-alt" id="str"></i></a> (4,5) <br></br>
+                                                <i class="fas fa-map-marker-alt"></i> Newyork, USA <br></br>
+                                                <i class="fas fa-money-bill-alt"></i> 50.000 - 90.000 FCFA <br></br>
+                                                <i class="fas fa-clock"></i> Disponible 22 Février au 22 Mars                           
+                                            </div>
+                                </div>
+                            </div>
+                            <div id="btn" class="col-md-4">
+                                        <br></br>
+                                        <i id="ic1" class="fas fa-hand-point-right"></i> 98% <br></br>
+                                        <i id="ic1" class="fas fa-comment-dots"></i> 17 Feedback <br></br>
+                                        <i id="ic2" class="fas fa-map-marker-alt"></i> Newyork, USA <br></br>
+                                        <button class="btn btn-outline-primary form-control mb-3">Voir profile</button>
+                                        <div class="btn btn-primary form-control">Réservr une place</div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card my-3">
+                        <div class="row align-items-center">
+                            <div class="col-md-8">
+                                <div class="row align-items-center">
+                                    <div class="col-4">
+                                        <img src="webtemplate/static/img/doctors/doctors-4.jpg" id="img" style="width: 100%"/>
+                                    </div>                                    
+                                            <div id="hd1" class="header">
+                                                <h3>Dr Siata KONE <a href="#"><i class="fas fa-check-circle" id="icn"></i></a></h3>
+                                                <small>BOS, MDS Cral esdrftgvybhnj,k</small> <br></br>
+                                                <small>Dentiste</small> <br></br>
+                                                <a href="#"><i class="fas fa-star" id="str"></i></a> 
+                                                <a href="#"><i class="fas fa-star" id="str"></i></a> 
+                                                <a href="#"><i class="fas fa-star" id="str"></i></a> 
+                                                <a href="#"><i class="fas fa-star" id="str"></i></a> 
+                                                <a href="#"><i class="fas fa-star-half-alt" id="str"></i></a> (4,5) <br></br>
+                                                <i class="fas fa-map-marker-alt"></i> Newyork, USA <br></br>
+                                                <i class="fas fa-money-bill-alt"></i> 50.000 - 90.000 FCFA <br></br>
+                                                <i class="fas fa-clock"></i> Disponible 22 Février au 22 Mars                           
+                                            </div>
+                                </div>
+                            </div>
+                            <div id="btn" class="col-md-4">
+                                        <br></br>
+                                        <i id="ic1" class="fas fa-hand-point-right"></i> 98% <br></br>
+                                        <i id="ic1" class="fas fa-comment-dots"></i> 17 Feedback <br></br>
+                                        <i id="ic2" class="fas fa-map-marker-alt"></i> Newyork, USA <br></br>
+                                        <button class="btn btn-outline-primary form-control mb-3">Voir profile</button>
+                                        <div class="btn btn-primary form-control">Réservr une place</div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+</body>
+                    </div>
+                </t>
+            </t>
+         </field>
+        </record>
+
+        <record id="homepage_view_menu" model="website.page">
+            <field name="website_published">True</field>
+            <field name="url">/demoNome</field>
+            <field name="is_homepage">True</field>
+            <field name="view_id" ref="homepage_view_1"/>
+        </record>
+    </data>
+</odoo>
